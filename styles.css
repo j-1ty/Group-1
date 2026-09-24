@@ -9,12 +9,12 @@ p, h2 {
 	border: 0;
 	box-sizing: border-box;
 }	
-/* Class for headshots on homepage to float left of biographies*/
+/* Class/selector for headshots on homepage to float left of biographies*/
 img.floatleft {
 	float: left;
 	margin-right: 20px;
 }
-/*Classes for menu buttons and design*/
+/*Classes/selectors for menu buttons and design*/
 .menu {
 	text-align: center;
 	padding: 0;
