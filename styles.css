@@ -1,0 +1,17 @@
+/* File name: style.css
+   Date: 09/22/2026
+   Names: JaDarius Tyler, Canaria Hill, Jordan Brown, Esteria Smith, Mylan Thomas
+*/
+
+p, h2 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}	
+
+
+img.floatleft {
+	float: left;
+	margin-right: 20px;
+}
