@@ -9,9 +9,28 @@ p, h2 {
 	border: 0;
 	box-sizing: border-box;
 }	
-
-
+/* Class for headshots on homepage to float left of biographies*/
 img.floatleft {
 	float: left;
 	margin-right: 20px;
+}
+/*Classes for menu buttons and design*/
+.menu {
+	text-align: center;
+	padding: 0;
+}
+.menu-item {
+	display: inline-block;
+	margin: 0 10px;
+}
+.menu-item a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #E8210E;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.menu-item a:hover {
+	background-color: gray;
 }
