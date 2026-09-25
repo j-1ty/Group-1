@@ -123,3 +123,10 @@ img.floatleft {
 	object-fit: cover;
 	border-radius: 20px;
 }
+
+form {
+	position: absolute;
+	left: 0;
+	top: 100px;
+	width: 400px;
+}
