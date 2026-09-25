@@ -38,3 +38,59 @@ body {
 	background-color: #E8210E;
 	color: white;
 }
+/* File name: style.css
+   Date: 09/22/2026
+   Names: JaDarius Tyler, Canaria Hill, Jordan Brown, Esteria Smith, Mylan Thomas
+*/
+
+p, h2 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}	
+/* Class/selector for headshots on homepage to float left of biographies*/
+img.floatleft {
+	float: left;
+	margin-right: 20px;
+}
+/*Classes/selectors for menu buttons and design*/
+.menu {
+	text-align: center;
+	padding: 0;
+}
+.menu-item {
+	display: inline-block;
+	margin: 0 10px;
+}
+.menu-item a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #E8210E;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.menu-item a:hover {
+	background-color: gray;
+}
+/* Mylan Thomas - History Table Styles */
+
+/* Centers and emphasizes the history table title */
+.history-table caption {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Styles the table headings using a color from the website plan */
+.history-table th {
+    background-color: #1F8B4C;
+    color: white;
+    padding: 10px;
+}
+
+/* Alternates row colors to make the timeline easier to read */
+.history-table tr:nth-child(even) {
+    background-color: #7F7F7F;
+}
