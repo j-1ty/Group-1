@@ -137,3 +137,7 @@ img.floatleft {
 	height: 360px;
 	object-fit: cover;
 }
+
+body {
+	background-color: #1F8B4C;
+}
