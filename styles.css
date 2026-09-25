@@ -152,6 +152,12 @@ h3 {
 }
 
 /* Links when the mouse is over them */
+/* YouTube link */
+a {
+    color: white;
+    text-decoration: none;
+}
+
 a:hover {
     color: #FFD700;
     text-decoration: underline;
