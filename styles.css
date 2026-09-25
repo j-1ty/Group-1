@@ -131,9 +131,9 @@ img.floatleft {
 
 .fun-picture {
 	position: absolute;
-	left: 680px;
+	left: 700px;
 	top: 45px;
-	width: 400px;
+	width: 640px;
 	height: 360px;
 	object-fit: cover;
 }
