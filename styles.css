@@ -103,19 +103,11 @@ img.floatleft {
 	width: 65%;
 }
 
-.contact-container form {
-	width: 65%;
-	margin-top: 10px;
-	margin-left: 0;
-	position: static;
-}
-
 /* KEEP THE PICTURE ON THE RIGHT */
 .contact-image {
 	position: absolute;
 	top: 0;
 	right: 0;
-}
 
 .container-image img {
 	width: 300px;
@@ -124,9 +116,11 @@ img.floatleft {
 	border-radius: 20px;
 }
 
-form {
+.contact-container form {
 	position: absolute;
-	left: 0;
 	top: 100px;
+	right: 0;
+	left: auto;
 	width: 400px;
+	margin: 0;
 }
