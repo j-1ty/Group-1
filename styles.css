@@ -119,8 +119,8 @@ img.floatleft {
 .contact-container form {
 	position: absolute;
 	top: 100px;
-	right: 0;
-	left: auto;
+	right: auto;
+	left: 0;
 	width: 400px;
 	margin: 0;
 }
