@@ -34,3 +34,7 @@ img.floatleft {
 .menu-item a:hover {
 	background-color: gray;
 }
+body {
+	background-color: #E8210E;
+	color: white;
+}
