@@ -97,7 +97,6 @@ img.floatleft {
 
 .contact-container {
 	position: relative;
-	min-height: 600px;
 }
 
 .contact-image {
@@ -115,5 +114,5 @@ img.floatleft {
 
 .contact-form {
 	width: 65%;
-	margin-top: 20px;
+	margin-top: 10px;
 }
