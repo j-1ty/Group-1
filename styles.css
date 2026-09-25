@@ -116,3 +116,10 @@ img.floatleft {
 	width: 65%;
 	margin-top: 10px;
 }
+
+form {
+	position: absolute;
+	left: 10px;
+	top: 120px;
+	width: 400px;
+}
