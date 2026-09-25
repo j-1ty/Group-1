@@ -99,27 +99,27 @@ img.floatleft {
 	position: relative;
 }
 
+.contact-form {
+	width: 65%;
+}
+
+.contact-container form {
+	width: 65%;
+	margin-top: 10px;
+	margin-left: 0;
+	position: static;
+}
+
+/* KEEP THE PICTURE ON THE RIGHT */
 .contact-image {
 	position: absolute;
 	top: 0;
 	right: 0;
 }
 
-.contact-image img {
+.container-image img {
 	width: 300px;
 	height: 300px;
 	object-fit: cover;
 	border-radius: 20px;
-}
-
-.contact-form {
-	width: 65%;
-	margin-top: 10px;
-}
-
-form {
-	position: absolute;
-	left: 10px;
-	top: 120px;
-	width: 400px;
 }
