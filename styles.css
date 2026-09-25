@@ -124,3 +124,16 @@ img.floatleft {
 	width: 400px;
 	margin: 0;
 }
+
+.video-picture {
+	position: relative;
+}
+
+.fun-picture {
+	position: absolute;
+	left: 680px;
+	top: 45px;
+	width: 400px;
+	height: 360px;
+	object-fit: cover;
+}
