@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
 <head>
+<meta charset="UTF-8">
 <title>Contact</title>
 <link rel="stylesheet" href="css/styles.css">
 <style>
     body {
-        background-color: #5cefff;
-        color: blue;
+        background-color: #7f7f7f;
+        color: #5cefff;
+		font-family: 'Press Start 2P', monospace;
     }
 
     .contact-container {
         display: flex;
+		flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
         gap: 40px;
@@ -31,8 +33,85 @@
         max-width: 500px;
         border-radius: 20px;
     }
+	
+	form {
+		border: 10px groove #1f8b4c;
+		padding: 20px;
+		border-radius: 10px;
+	}
+	
+	input:user-invalid, textarea:user-invalid, select:user-invalid {
+		background-color: #ffcccc;
+	}
+	
+	input:user-valid, textarea:user-valid, select:user-valid {
+		background-color: #d4edda;
+	}
 </style>
+<script defer>
+	function checkForm(event) {
+		let firstNameWidget = document.querySelector("#first").value.trim();
+		let lastName = document.querySelector("#last").value.trim();
+		let email = document.querySelector("#email").value.trim();
+		let phone = document.querySelector("#phoneNum").value.trim();
+		let topic = document.querySelector("select[name='topic']").value;
+		let message = document.querySelector("#message").value.trim();
+		
+		let helpfulOptions = document.getElementsByName("helpful");
+		let radioChecked = false;
+		for (let i = 0; i < helpfulOptions.length;i++){
+			if (helpfulOptions[i].checked){
+			radioChecked = true;
+			break;
+			}
+		}
+	
+	if(firstName === "") {
+		alert("Please enter user's first name.");
+		event.preventDefault();
+		return;
+	}
+	
+	if(lastName === "") {
+		alert("Please enter user's last name.");
+		event.preventDefault();
+		return;
+	}
+	
+	if(email === "") {
+		alert("Please enter user's email address.");
+		event.preventDefault();
+		return;
+	}
+	
+	if (topic === "" || topic === "choose") {
+		alert("Please select a topic choice.");
+		event.preventDefault();
+		return;
+	}
+	
+	if(message === "") {
+		alert("Text box cannot be empty.");
+		event.preventDefault();
+		return;
+	}
+	
+	if(!radioChecked) {
+		alert("Please select yes or no.");
+		event.preventDefault();
+		return;
+	}
+}
+window.addEventListener("DOMContentLoaded", function() {
+	let contactForm = document.querySelector("#contactForm");
+	if(contactForm){
+		contactForm.addEventListener("submit", checkForm);
+	}
+});
+
+</script>
 </head>
+<body>
 
 <header>
 </header>
@@ -47,26 +126,67 @@
 </ul>
 </nav>
 <hr>
-<body>
+<main>
+
+<section>
+	<h1>Contact Us</h1>
+	
+	<div>
+	<p>JaDarius Tyler</p>
+	<p><strong>Email:</strong>jadarius1.tyler@famu.edu</p>
+	<p><strong>Phone Number:</strong>(334)314-3272</p>
+	<p><strong>LinkedIn:</strong><a href="www.linkedin.com/in/jadarius-tyler" target="_blank">View Profile</a></p>
+	</div>
+	
+	<br>
+	
+	<div>
+	<p>Esteria Smith</p>
+	<p><strong>Email:</strong>esteria1.smith@famu.edu</p>
+	<p><strong>Phone Number:</strong>(850)691-6810</p>
+	<p><strong>LinkedIn:</strong><a href="www.linkedin.com/in/esteria-smith" target="_blank">View Profile</a></p>
+	</div>
+	
+	<br>
+	
+	<div>
+	<p>Mylan Thomas</p>
+	<p><strong>Email:</strong>mylan1.thomas@famu.edu</p>
+	<p><strong>Phone Number:</strong>(561)703-9376</p>
+	<p><strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/mylanthomas/" target="_blank">View Profile</a></p>
+	</div>
+	
+	<br>
+	
+	<div>
+	<p>Canaria Hill</p>
+	<p><strong>Email:</strong>canaria1.hill@famu.edu</p>
+	<p><strong>Phone Number:</strong>(863)588-5158</p>
+	<p><strong>LinkedIn:</strong><a href="linkedin.com/in/canaria-hill-848007360" target="_blank">View Profile</a></p>
+	</div>
+	
+	<br>
+	
+	<div>
+	<p>Jordan Brown</p>
+	<p><strong>Email:</strong></p>
+	<p><strong>Phone Number:</strong>(850)284-5461</p>
+	<p><strong>LinkedIn:</strong><a href="" target="_blank">View Profile</a></p>
+	</div>
+	
+</section>
+	
 <div class="contact-container">
 
     <div class="contact-form">
         
-        <h1>Contact</h1>
         
         <p>We would love to hear from you or answer any
            questions you may have. Fill out the form below
            to let us know how your feeling.</p>
+        
 
-        <form action="" method="POST">
-            
-         </div>    
-
-<div class="contact-image">
-     <img src="paperboy.jpg" alt="Paperboy game">
-</div>
-
-<form action="" method="POST">
+<form id="contactForm" action="" method="POST">
   <div>
     <p>
       <label for="first">First Name:</label>
@@ -78,15 +198,15 @@
     </p>
     <p>
       <label for="email">Email:</label>
-      <input type="email" placeholder="name@domain.com" required>
+      <input type="email" name="email" id="email" placeholder="name@domain.com" required>
     </p>
     <p>
       <label for="phoneNum">Phone Number:</label>
-      <input type="tel" placeholder="(###)###-####">
+      <input type="tel" name="phoneNum" id="phoneNum" placeholder="(###)###-####" pattern="^\(\d{3}\)\d{3}-\d{4}$" title="Format: (###)###-####" required>
     </p>
     <p>Question or comment relation:</p>
     <p>
-      <select name="topic">
+      <select name="topic" required>
         <option value="choose">Choose Option</option>
         <option value="history">History</option>
         <option value="howToPlay">How to Play</option>
@@ -99,16 +219,16 @@
     <p>
       <label for="message">Message:</label>
       <br>
-      <textarea id="message" name="message" required></textarea>
+      <textarea id="message" name="message" maxlength="500" required></textarea>
     </p>
     <div>
     <p>Was this website helpful?</p>
-      <input type="radio" name="helpful" value="yes" id="yes">
-      <label for="siteHelpful">Yes</label>
+      <input type="radio" name="helpful" value="yes" id="yes" required>
+      <label for="yes">Yes</label>
     </div>
     <div>
-      <input type="radio" name="helpful" value="no" id="no">
-      <label for="siteHelpful">No</label>
+		<input type="radio" name="helpful" value="no" id="no">
+      <label for="no">No</label>
     </div>
    <button>Submit</button>
    </div>
@@ -116,10 +236,11 @@
    </form>
    </div>
 
-   </body>
+   </main>
   
 
 <br>
 <br>
 <footer>&copy; 2026 Paperboy. All rights reserved.</footer>
+</body>
 </html>
