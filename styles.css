@@ -252,3 +252,81 @@ body:has(.game-header) {
 .game-header .menu a:hover {
 	background-color: #ef3842;
 }
+
+.game-hero {
+	background: linear-gradient(
+		#55b9f0,
+		#b8e8ff
+	);
+	text-align: center;
+	padding: 60px 20px;
+	border-bottom: 8px solid #103c70;
+}
+
+.scoreboard {
+	background-color: #071b34
+	color: #ffcc4d;
+	padding: 15px;
+	font-family: "Courier New", monospace;
+	font-weight: bold;
+	border: 3px solid white;
+	margin: 0 auto 35px;
+	max-width: 350px;
+}
+
+.scoreboard span {
+	display: block;
+	color: #ff5c8a;
+	margin-top: 10px;
+}
+
+.game-hero h1 {
+	color: #ffcc4d;
+	font-size: 65px;
+	text-shadow: 4px 4px #103c70;
+	font-family: "Courier New", monospace;
+}
+
+.game-hero h2 {
+	color: #103c70;
+	font-size: 22px;
+	margin: 20px 0;
+}
+
+.play-button {
+	display: inline-block;
+	background-color: #ef3842;
+	color: white;
+	padding: 18px 35px;
+	margin-top: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 8px;
+	box-shadow: 5px 5px #103c70;
+}
+
+.play-button:hover {
+	background-color: #ffcc4d;
+	color: #103c70
+}
+
+.intro {
+	background-color: #fff4db;
+	padding: 45px 25px;
+	text-align: center;
+}
+
+.intro h2 {
+	color: #103c70;
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+.intro p {
+	color: #17263e;
+	font size: 18px;
+	line-height: 1.8;
+	max-width: 800px;
+	margin: auto;
+}
+	
