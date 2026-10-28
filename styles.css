@@ -220,8 +220,10 @@ body:has(.game-header) {
 
 .game-header {
 	background-color: #103c70;
-	padding: 20px;
-	text-align: center;
+	padding: 15px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .game-logo {
