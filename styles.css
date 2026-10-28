@@ -230,7 +230,7 @@ body:has(.game-header) {
 	color: white;
 	font-size: 45px;
 	font-family: "Courier New", monospace;
-	text-shadow: 4px 4px #ef3842
+	text-shadow: 4px 4px #ef3842;
 }
 
 .game-header .menu {
@@ -266,7 +266,7 @@ body:has(.game-header) {
 }
 
 .scoreboard {
-	background-color: #071b34
+	background-color: #071b34;
 	color: #ffcc4d;
 	padding: 15px;
 	font-family: "Courier New", monospace;
@@ -309,7 +309,7 @@ body:has(.game-header) {
 
 .play-button:hover {
 	background-color: #ffcc4d;
-	color: #103c70
+	color: #103c70;
 }
 
 .intro {
