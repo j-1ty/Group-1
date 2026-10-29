@@ -191,11 +191,21 @@ h1 {
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
-  overflow: hideen;
+  overflow: hidden;
 }
 
 .member p.expanded {
   display: block;
+}
+
+.read-more {
+  background: #E8210E;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 .member img,
@@ -399,7 +409,7 @@ Throughout his time at Florida A&M University, JaDarius has been privileged to w
 
 Looking toward the future, JaDarius plans to join a corporate IT rotational program to gain experience and discover where he truly wants to establish himself in the technology industry. He hopes to utilize the knowledge and skills gained during his undergraduate experience to add value, demonstrate initiative, and contribute creative problem-solving wherever he works. As JaDarius continues to grow academically and professionally, he plans to combine the skills developed throughout his technology journey with his long-term dream of pursuing real estate development.
         </p>
-        <a href="#contact">READ MORE →</a>
+        <button type="button" class="read-more" onclick="toggleBio(this)">READ MORE -></button>
       </div>
     </div>
 
@@ -503,7 +513,19 @@ A few career goals for Esteria are to become either a computer systems analyst o
   © 2026 Paperboy. All rights reserved.
 </footer>
 
+
+  
+<script>
+  function toggleBio(button) {
+    const member = button.closest('.member');
+
+    member.classList.toggle('expanded');
+
+    button.textContent = member.classList.contains('expanded')
+        ? 'READ LESS <-'
+        : 'READ MORE ->';
+  }
+</script>
 </body>
 </html>
 
-</body>
