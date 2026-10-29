@@ -345,5 +345,6 @@ body:has(.game-header) {
 
 .game-hero h1 {
 	font-size: 38px;
+    }
 }
 
