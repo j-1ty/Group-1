@@ -2,6 +2,145 @@
    Date: 09/22/2026
    Names: JaDarius Tyler, Canaria Hill, Jordan Brown, Esteria Smith, Mylan Thomas
 */
+/* ==================================
+INDEX.HTML - HOMEPAGE STYLING
+================================== */
+/* Simple Paperboy Homepage */
+
+body:has(.game-header) {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f2f8ff;
+	color: #222;
+}
+
+/* Header and Navigation */
+.game-header {
+	background-color: #004a99;
+	padding: 20px;
+	text-align: center;
+}
+
+.game-logo {
+	color: white;
+	font-size: 45px;
+	font-weight: bold;
+}
+
+.game-header .menu {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 15px;
+	padding: 10px;
+	list-style: none;
+}
+
+.game-header .menu a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* Main Welcome Area */
+.game-hero {
+	background-color: #168be8;
+	text-align: center;
+	padding: 50px 20px;
+}
+
+.game-hero h1 {
+	color: white;
+	font-size: 55px;
+}
+
+.game-hero h2 {
+	color: white;
+}
+
+/* Button */
+.play-button {
+	display: inline-block;
+	background-color: #ffcf00;
+	color: black;
+	padding: 15px 30px;
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* Introduction */
+.intro {
+	background-color: white;
+	color: #222;
+	text-align: center;
+	padding: 40px 20px;
+}
+
+.intro p {
+	max-width: 700px;
+	margin: 15px auto;
+	line-height: 1.6;
+}
+
+/* Website Selections */
+.features {
+	background-color: 004a99;
+	text-align: center;'
+	padding: 40px 20px;
+}
+
+.features h2 {
+	color: white;
+}
+
+.feature-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 15px;
+	max-width: 850px;
+	margin: auto;
+}
+
+.feature-grid a {
+	display: block;
+	background-color: #ffcf00;
+	color: black;
+	padding: 25px;
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* Team Section */
+.team-heading {
+	background-color: #004a99;
+	color: white;
+	text-align: center;
+	padding: 25px;
+}
+
+#welcome {
+	background-color: white;
+	color: #222;
+	padding: 30px;
+}
+
+#welcome img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Mobile Layout */
+@media (max-width: 600px) {
+	.feature-grid {
+		grid-template-columns: 1fr;
+	}
+
+.game-hero h1 {
+	font-size: 38px;
+    }
+}
 
 p, h2 {
 	margin: 0;
@@ -38,42 +177,9 @@ body {
 	background-color: #E8210E;
 	color: white;
 }
-/* File name: style.css
-   Date: 09/22/2026
-   Names: JaDarius Tyler, Canaria Hill, Jordan Brown, Esteria Smith, Mylan Thomas
-*/
 
-p, h2 {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	box-sizing: border-box;
-}	
-/* Class/selector for headshots on homepage to float left of biographies*/
-img.floatleft {
-	float: left;
-	margin-right: 20px;
-}
-/*Classes/selectors for menu buttons and design*/
-.menu {
-	text-align: center;
-	padding: 0;
-}
-.menu-item {
-	display: inline-block;
-	margin: 0 10px;
-}
-.menu-item a {
-    display: block;
-    padding: 10px 20px;
-    background-color: #E8210E;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-.menu-item a:hover {
-	background-color: gray;
-}
+
+
 /* Mylan Thomas - History Table Styles */
 
 /* Centers and emphasizes the history table title */
@@ -211,140 +317,4 @@ footer {
   min-height: 200px;
 }
 
-/* Simple Paperboy Homepage */
-
-body:has(.game-header) {
-	margin: 0;
-	font-family: Arial, sans-serif;
-	background-color: #f2f8ff;
-	color: #222;
-}
-
-/* Header and Navigation */
-.game-header {
-	background-color: #004a99;
-	padding: 20px;
-	text-align: center;
-}
-
-.game-logo {
-	color: white;
-	font-size: 45px;
-	font-weight: bold;
-}
-
-.game-header .menu {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 15px;
-	padding: 10px;
-	list-style: none;
-}
-
-.game-header .menu a {
-	color: white;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-/* Main Welcome Area */
-.game-hero {
-	background-color: #168be8;
-	text-align: center;
-	padding: 50px 20px;
-}
-
-.game-hero h1 {
-	color: white;
-	font-size: 55px;
-}
-
-.game-hero h2 {
-	color: white;
-}
-
-/* Button */
-.play-button {
-	display: inline-block;
-	background-color: #ffcf00;
-	color: black;
-	padding: 15px 30px;
-	border-radius: 8px;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-/* Introduction */
-.intro {
-	background-color: white;
-	color: #222;
-	text-align: center;
-	padding: 40px 20px;
-}
-
-.intro p {
-	max-width: 700px;
-	margin: 15px auto;
-	line-height: 1.6;
-}
-
-/* Website Selections */
-.features {
-	background-color: 004a99;
-	text-align: center;'
-	padding: 40px 20px;
-}
-
-.features h2 {
-	color: white;
-}
-
-.feature-grid {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 15px;
-	max-width: 850px;
-	margin: auto;
-}
-
-.feature-grid a {
-	display: block;
-	background-color: #ffcf00;
-	color: black;
-	padding: 25px;
-	border-radius: 8px;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-/* Team Section */
-.team-heading {
-	background-color: #004a99;
-	color: white;
-	text-align: center;
-	padding: 25px;
-}
-
-#welcome {
-	background-color: white;
-	color: #222;
-	padding: 30px;
-}
-
-#welcome img {
-	max-width: 100%;
-	height: auto;
-}
-
-/* Mobile Layout */
-@media (max-width: 600px) {
-	.feature-grid {
-		grid-template-columns: 1fr;
-	}
-
-.game-hero h1 {
-	font-size: 38px;
-    }
-}
 
