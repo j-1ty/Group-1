@@ -349,3 +349,28 @@ form {
     input:user-valid, textarea:user-valid, select:user-valid {
         background-color: #d4edda;
     }
+
+/* Contact Page Navigation Specific Styles */
+.contact-nav ul.menu {
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+.contact-nav li.menu-item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.contact-nav li.menu-item a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #E8210E !important;
+    color: white !important;
+    text-decoration: none !important;
+    border-radius: 5px;
+}
+
+.contact-nav li.menu-item a:hover {
+    background-color: gray !important;
+}
