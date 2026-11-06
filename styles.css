@@ -374,3 +374,52 @@ form {
 .contact-nav li.menu-item a:hover {
     background-color: gray !important;
 }
+
+/* Vertically centers everone's profile on the page */
+.newspaper-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Individual Card Styling - Uniform width for all cards */
+.newspaper-profile {
+    background-color: #ffffff;
+    color: #111111;
+    border: 3px solid #000000;
+    padding: 15px;
+    box-shadow: 5px 5px 0px #000000;
+    width: 320px;            /* Fixed uniform width for every card */
+    box-sizing: border-box;
+}
+
+/* Profile Picture Styling */
+.profile-pic {
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    background-color: #f0f0f0;
+    border: 2px solid #000000;
+    margin-bottom: 12px;
+}
+
+.profile-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 4px;
+}
+
+/* Link Colors for Resume & LinkedIn */
+.newspaper-profile a {
+    color: #1F8B4C !important;
+    text-decoration: underline !important;
+}
+
+.newspaper-profile a:hover {
+    color: #E8210E !important;
+}
